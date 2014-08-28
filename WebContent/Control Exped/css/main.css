@@ -1,0 +1,49 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#rodape{
+  
+  
+    width: 100%;
+    background-color: #eeeeee;
+    height: 30px;   
+    bottom: 0px;
+    text-align: center;
+    //position: relative;
+    position: fixed;
+    
+    //opacity: 0.4;
+    
+ 
+}
+#canto{
+width:70px;
+height:60px;
+position:absolute;
+margin-left:85%;
+}
+/*para dar espaço para nao ficar dando varios <br>*/
+.espaco {
+    padding: 40px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
