@@ -10,8 +10,7 @@ public class JpaUtil {
 
 	public static void iniciarPersistenceUnit() {
 		if (entityManagerFactory == null)
-			entityManagerFactory = Persistence
-					.createEntityManagerFactory("control_exped_pu");
+			entityManagerFactory = Persistence.createEntityManagerFactory("control_exped_pu");
 	}
 	
 	public static EntityManager getEntityManager() {

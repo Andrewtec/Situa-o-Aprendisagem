@@ -5,7 +5,6 @@ import java.util.Date;
 
 import javax.persistence.EntityManager;
 
-
 import projeto.dao.CargaDao;
 import projeto.entity.Carga;
 import projeto.entity.Cliente;
@@ -61,63 +60,21 @@ public class Main {
 
 		carga.setServicos(servicos);
 		carga.setTransportadora(transportadora);
-		
 
 		entityManager.getTransaction().begin();
 		dao.registrarCarga(carga);
 		entityManager.getTransaction().commit();
 	}
-	
-	
-//	    private static void testAlterar(){
-//	    Cliente cliente = new Cliente();
-//		cliente.setCodigo_cliente(1L);
-//		cliente.setNome("Ana");
-//		cliente.setCnpj("884445553333/0000");
-//		cliente.setEndereco("Rua Patric Farias - 127 - Florianopolis-SC");
-//
-//		Transportadora transportadora = new Transportadora();
-//		transportadora.setId_transportadora(1L);
-//		transportadora.setNome("Express");
-//		transportadora.setRota("Norte");
-//
-//		Servico servico = new Servico();
-//		servico.setCliente(cliente);
-//		servico.setDescrição("Servico1");
-//
-//		Servico servico2 = new Servico();
-//		servico2.setCliente(cliente);
-//		servico2.setDescrição("Servico2");
-//
-//		ArrayList servicos = new ArrayList<Servico>();
-//		servicos.add(servico);
-//		servicos.add(servico2);
-//
-//		Carga carga = new Carga();
-//		carga.setData(new Date());
-//		carga.setDescrição("Serviço de Carga curta");
-//		carga.setEntrada("1");
-//		carga.setSaida("2");
-//
-//		carga.setServicos(servicos);
-//		carga.setTransportadora(transportadora);
-//		
-//
-//		entityManager.getTransaction().begin();
-//		dao.atualizarCarga(carga);
-//		entityManager.getTransaction().commit();}
-//	
-	    
-            private static void testAlterar(){
-			entityManager.getTransaction().begin();
-			Carga cargaEditado = entityManager.find(Carga.class, 1L);
-			cargaEditado.setDescrição("Serviço de Carga Curta");
-			cargaEditado.setEntrada("2");
-			
-			entityManager.merge(cargaEditado);
-			entityManager.getTransaction().commit();
-			
-		}
-	
-	
+
+	private static void testAlterar() {
+		entityManager.getTransaction().begin();
+		Carga cargaEditado = entityManager.find(Carga.class, 1L);
+		cargaEditado.setDescrição("Serviço de Carga Curta");
+		cargaEditado.setEntrada("2");
+
+		entityManager.merge(cargaEditado);
+		entityManager.getTransaction().commit();
+
+	}
+
 }

@@ -1,0 +1,22 @@
+.content{
+	margin-top:80px;
+}
+#rodape{
+  
+  
+    width: 100%;
+    background-color: #eeeeee;
+    height: 30px;   
+    bottom: 0px;
+    text-align: center;
+    //position: relative;
+    position: fixed;
+    
+    //opacity: 0.4;
+    
+ 
+}
+.espaco {
+    padding: 40px;
+    
+}
