@@ -21,7 +21,7 @@ public class Carga {
 	private String saida;
 	private Date data;
 	@Lob
-	private String descrição;
+	private String descricao;
 	@OneToMany(cascade = CascadeType.PERSIST, mappedBy = "carga")
 	private List<Servico> servicos;
 	@ManyToOne(cascade = CascadeType.PERSIST)
@@ -75,12 +75,12 @@ public class Carga {
 		this.data = data;
 	}
 
-	public String getDescrição() {
-		return descrição;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescrição(String descrição) {
-		this.descrição = descrição;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 }

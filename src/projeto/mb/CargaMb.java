@@ -12,16 +12,16 @@ import projeto.util.JpaUtil;
 public class CargaMb {
 	
 	private List<Carga> carga;
-	private String descrição;
+	private String descricao;
 	private String entrada;
 	private String saida;
 	
 	
-	public String getDescrição() {
-		return descrição;
+	public String getDescricao() {
+		return descricao;
 	}
-	public void setDescrição(String descrição) {
-		this.descrição = descrição;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	public String getEntrada() {
 		return entrada;
@@ -49,7 +49,7 @@ public class CargaMb {
 	
 	public String salvar(){
 		Carga carga = new Carga();
-		carga.setDescrição(descrição);
+		carga.setDescricao(descricao);
 		carga.setEntrada(entrada);
 		carga.setSaida(saida);
 		

@@ -59,7 +59,7 @@ public class Main {
 
 		Carga carga = new Carga();
 		carga.setData(new Date());
-		carga.setDescrição("Serviço de Carga longa");
+		carga.setDescricao("Serviço de Carga longa");
 		carga.setEntrada("1");
 		carga.setSaida("2");
 
@@ -74,7 +74,7 @@ public class Main {
 	private static void testAlterar() {
 		entityManager.getTransaction().begin();
 		Carga cargaEditado = entityManager.find(Carga.class, 1L);
-		cargaEditado.setDescrição("Serviço de Carga Curta");
+		cargaEditado.setDescricao("Serviço de Carga Curta");
 		cargaEditado.setEntrada("2");
 
 		entityManager.merge(cargaEditado);
@@ -88,7 +88,7 @@ public class Main {
 		
 		for(Carga cargas : carga){
 			System.out.print("Entrada: " + cargas.getEntrada());
-			System.out.println(" - Descrição: " + cargas.getDescrição());
+			System.out.println(" - Descrição: " + cargas.getDescricao());
 			if(cargas.getId()== 7L){
 				for(Servico servicos : cargas.getServicos()){
 					System.out.println("servico: " + servicos.getDescrição());
