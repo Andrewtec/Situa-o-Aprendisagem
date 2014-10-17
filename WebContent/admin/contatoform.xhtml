@@ -19,14 +19,22 @@
 						<h:inputText value="#{contatoMb.nome}" styleClass="form-control" />
 					</div>
 					<div class="form-group">
-						<h:outputLabel value="Gênero" /> 
-						<h:inputText value="#{canalMb.genero}" styleClass="form-control" />
+						<h:outputLabel value="E-mail" /> 
+						<h:inputText value="#{contatoMb.email}" styleClass="form-control" />
 					</div>
 					<div class="form-group">
-						<h:outputLabel value="Número" /> 
-						<h:inputText value="#{canalMb.numero}" styleClass="form-control" />
+						<h:outputLabel value="Telefone" /> 
+						<h:inputText value="#{contatoMb.telefone}" styleClass="form-control" />
 					</div>
-					<h:commandButton action="#{canalMb.salvar}" styleClass="btn btn-default" value="Enviar" />
+					<div class="form-group">
+						<h:outputLabel value="Assunto" /> 
+						<h:inputText value="#{contatoMb.assunto}" styleClass="form-control" />
+					</div>
+					<div class="form-group">
+						<h:outputLabel value="Mensagem" /> 
+						<h:inputText value="#{contatoMb.mensagem}" styleClass="form-control" />
+					</div>
+					<h:commandButton action="#{contatoMb.salvar}" styleClass="btn btn-default" value="Enviar" />
 				</h:form>
 			</div>
 		</div>

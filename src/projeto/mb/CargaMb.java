@@ -3,8 +3,10 @@ package projeto.mb;
 import java.util.List;
 
 import javax.faces.bean.ManagedBean;
+import javax.persistence.Query;
 
 import projeto.entity.Carga;
+import projeto.util.JpaUtil;
 
 @ManagedBean
 public class CargaMb {
@@ -34,10 +36,26 @@ public class CargaMb {
 		this.saida = saida;
 	}
 	public List<Carga> getCarga() {
+		if(carga == null){
+			Query query = JpaUtil.getEntityManager()
+					.createQuery("From Canal", Carga.class);
+			carga = query.getResultList();
+		}
 		return carga;
 	}
 	public void setCarga(List<Carga> carga) {
 		this.carga = carga;
+	}
+	
+	public String salvar(){
+		Carga carga = new Carga();
+		carga.setDescrição(descrição);
+		carga.setEntrada(entrada);
+		carga.setSaida(saida);
+		
+
+		JpaUtil.getEntityManager().persist(carga);
+		return "";
 	}
 
 }

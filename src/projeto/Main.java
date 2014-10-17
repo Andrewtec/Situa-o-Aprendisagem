@@ -2,8 +2,11 @@ package projeto;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
+
 
 import projeto.dao.CargaDao;
 import projeto.entity.Carga;
@@ -25,6 +28,8 @@ public class Main {
 
 		testInserir();
 		testAlterar();
+		testListar();
+		//testExcluir();
 
 	}
 
@@ -76,5 +81,26 @@ public class Main {
 		entityManager.getTransaction().commit();
 
 	}
+	
+	private static void testListar() {
+		Query query = entityManager.createQuery("From Carga", Carga.class);
+		List<Carga> carga = query.getResultList();
+		
+		for(Carga cargas : carga){
+			System.out.print("Entrada: " + cargas.getEntrada());
+			System.out.println(" - Descrição: " + cargas.getDescrição());
+			if(cargas.getId()== 7L){
+				for(Servico servicos : cargas.getServicos()){
+					System.out.println("servico: " + servicos.getDescrição());
+				}
+			}
+		}
+	}
+////	private static void testExcluir() {
+////		entityManager.getTransaction().begin();
+////		Carga carga = entityManager.find(Carga.class, 1L);
+////		entityManager.remove(carga);
+////		entityManager.getTransaction().commit();
+//	}
 
 }
