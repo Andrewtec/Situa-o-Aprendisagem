@@ -1,29 +1,30 @@
 package projeto.dao;
 import javax.persistence.Query;
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
 import projeto.entity.Carga;
+import projeto.util.JpaUtil;
 
 public class CargaDao {
 	
 	private EntityManager entityManager;
 	
-	public CargaDao(EntityManager entityManager){
+	public CargaDao(){
 		
-		this.entityManager=entityManager;
+		entityManager = JpaUtil.getEntityManager();
 	}
 	
-	public void registrarCarga(Carga carga){
-		
-		entityManager.persist(carga);
-		
+	public Carga buscarPorId(Long id) {
+		return entityManager.find(Carga.class, id);
 	}
 	
 	public void excluirRegistroDeCargaPorId(Long id){
 		
-		Carga carga=entityManager.getReference(Carga.class,1L);
+		Carga carga=entityManager.getReference(Carga.class,id);
+		entityManager.remove(carga);
 	}
 	
 	public List<Carga> ListarCargas(){

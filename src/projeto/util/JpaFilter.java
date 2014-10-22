@@ -17,7 +17,7 @@ public class JpaFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain filterChain) throws IOException, ServletException {
-		EntityManager entityManager = JpaUtil.getEntityManager();
+		EntityManager entityManager = JpaUtil.createEntityManager();
 		
 		JpaUtil.setEntityManager(request, entityManager);
 		
