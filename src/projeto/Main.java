@@ -10,7 +10,6 @@ import javax.persistence.Query;
 import projeto.dao.CargaDao;
 import projeto.entity.Carga;
 import projeto.entity.Cliente;
-import projeto.entity.Servico;
 import projeto.entity.Transportadora;
 import projeto.util.JpaUtil;
 

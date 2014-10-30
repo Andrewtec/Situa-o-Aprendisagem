@@ -1,16 +1,37 @@
 package projeto.entity;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Cliente {
 
 	@Id
-	private double codigo_cliente;
-	private String cnpj;
-	private String endereco;
+	private long id;
 	private String nome;
+	private String loja;
+	private String cidade;
+	@OneToMany(mappedBy = "cliente")
+	private List<Carga> cargas;
+
+	public List<Carga> getCargas() {
+		return cargas;
+	}
+
+	public void setCargas(List<Carga> cargas) {
+		this.cargas = cargas;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;
@@ -20,28 +41,20 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public double getCodigo_cliente() {
-		return codigo_cliente;
+	public String getLoja() {
+		return loja;
 	}
 
-	public void setCodigo_cliente(double codigo_cliente) {
-		this.codigo_cliente = codigo_cliente;
+	public void setLoja(String loja) {
+		this.loja = loja;
 	}
 
-	public String getCnpj() {
-		return cnpj;
+	public String getCidade() {
+		return cidade;
 	}
 
-	public void setCnpj(String cnpj) {
-		this.cnpj = cnpj;
-	}
-
-	public String getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
 	}
 
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="../WEB-INF/templates/base.xhtml">
+	<ui:define name="page-title">
+		<h1>Cliente</h1>
+	</ui:define>
+	<ui:define name="content">
+		<div class="panel panel-default col-md-9">
+			<div class="panel-body">
+				<h:form role="form">
+					<h:inputHidden value="#{clienteMb.cliente.id}" />
+					<h:panelGroup rendered="#{not empty clienteMb.cliente.id}">
+						<div class="form-group">
+							<h:outputLabel value="Código" />
+							<h:inputText readonly="true" value="#{clienteMb.cliente.id}"
+								styleClass="form-control" />
+						</div>
+					</h:panelGroup>
+					<div class="form-group">
+						<h:outputLabel value="Nome">
+						</h:outputLabel>
+						<h:inputText value="#{clienteMb.cliente.nome}"
+							styleClass="form-control"></h:inputText>
+					</div>
+					<div class="form-group">
+						<h:outputLabel value="Loja">
+						</h:outputLabel>
+						<h:inputText value="#{clienteMb.cliente.loja}"
+							styleClass="form-control"></h:inputText>
+					</div>
+					<div class="form-group">
+						<h:outputLabel value="Cidade">
+						</h:outputLabel>
+						<h:inputText value="#{clienteMb.cliente.cidade}"
+							styleClass="form-control"></h:inputText>
+					</div>
+
+					<h:commandButton action="#{clienteMb.salvar}" value="Salvar"
+						styleClass="btn btn-default"></h:commandButton>
+				</h:form>
+			</div>
+		</div>
+		<div class="espaco"></div>
+	</ui:define>
+</ui:composition>
+</html>

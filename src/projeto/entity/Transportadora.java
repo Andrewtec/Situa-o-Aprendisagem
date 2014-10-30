@@ -1,23 +1,38 @@
 package projeto.entity;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Transportadora {
 
 	@Id
-	private double id_transportadora;
+	private long id;
 	private String nome;
-	private String rota;
+	private String cnpj;
+	private String telefone;
+	@OneToMany(mappedBy = "transportadora")
+	private List<Carga> cargas;
 
-	public double getId_transportadora() {
-		return id_transportadora;
+	public long getId() {
+		return id;
 	}
 
-	public void setId_transportadora(double id_transportadora) {
-		this.id_transportadora = id_transportadora;
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public List<Carga> getCargas() {
+		return cargas;
+	}
+
+	public void setCargas(List<Carga> cargas) {
+		this.cargas = cargas;
 	}
 
 	public String getNome() {
@@ -28,12 +43,20 @@ public class Transportadora {
 		this.nome = nome;
 	}
 
-	public String getRota() {
-		return rota;
+	public String getCnpj() {
+		return cnpj;
 	}
 
-	public void setRota(String rota) {
-		this.rota = rota;
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
 	}
 
 }

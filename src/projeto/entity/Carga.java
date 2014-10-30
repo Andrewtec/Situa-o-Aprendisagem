@@ -1,15 +1,11 @@
 package projeto.entity;
 
-import java.util.Date;
-import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 @Entity
 public class Carga {
@@ -19,20 +15,19 @@ public class Carga {
 	private Long id;
 	private String entrada;
 	private String saida;
-	private Date data;
 	@Lob
 	private String descricao;
-	@OneToMany(cascade = CascadeType.PERSIST, mappedBy = "carga")
-	private List<Servico> servicos;
+	@ManyToOne(cascade = CascadeType.PERSIST)
+	private Cliente cliente;
 	@ManyToOne(cascade = CascadeType.PERSIST)
 	private Transportadora transportadora;
 
-	public List<Servico> getServicos() {
-		return servicos;
+	public Cliente getCliente() {
+		return cliente;
 	}
 
-	public void setServicos(List<Servico> servicos) {
-		this.servicos = servicos;
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 	public Transportadora getTransportadora() {
@@ -65,14 +60,6 @@ public class Carga {
 
 	public void setSaida(String saida) {
 		this.saida = saida;
-	}
-
-	public Date getData() {
-		return data;
-	}
-
-	public void setData(Date data) {
-		this.data = data;
 	}
 
 	public String getDescricao() {
