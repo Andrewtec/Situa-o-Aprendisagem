@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<carga id="1" descrição="Carga_1" entrada="Entrada_1" saida="Saida_1"/>
+	<carga id="2" descrição="Carga_2" entrada="Entrada_2" saida="Saida_2"/>
+	<carga id="3" descrição="Carga_3" entrada="Entrada_3" saida="Saida_3"/>
+</dataset> 

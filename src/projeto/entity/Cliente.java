@@ -10,7 +10,7 @@ import javax.persistence.OneToMany;
 public class Cliente {
 
 	@Id
-	private long id;
+	private Long id;
 	private String nome;
 	private String loja;
 	private String cidade;
@@ -25,7 +25,7 @@ public class Cliente {
 		this.cargas = cargas;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 

@@ -4,11 +4,9 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.persistence.Query;
 
 import projeto.dao.CargaDao;
 import projeto.entity.Carga;
-import projeto.util.JpaUtil;
 
 @ManagedBean
 public class CargaMb {
