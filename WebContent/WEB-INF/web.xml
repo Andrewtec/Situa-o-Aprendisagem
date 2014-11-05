@@ -13,6 +13,34 @@
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
+  
+  <!-- SMTP GMAIL -->
+	<context-param>
+		<param-name>servidor</param-name>
+		<param-value>smtp.gmail.com</param-value>
+	</context-param>
+	<context-param>
+		<param-name>porta</param-name>
+		<param-value>587</param-value>
+	</context-param>
+	<context-param>
+		<param-name>usuario</param-name>
+		<param-value>andreherzer@gmail.com</param-value>
+	</context-param>
+	<context-param>
+		<param-name>senha</param-name>
+		<param-value>els369PE</param-value>
+	</context-param>
+	<context-param>
+		<param-name>tls</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<context-param>
+		<param-name>auth</param-name>
+		<param-value>true</param-value>
+	</context-param>
+	<!-- ********** -->
+	
   <context-param>
     <description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
     <param-name>javax.faces.STATE_SAVING_METHOD</param-name>

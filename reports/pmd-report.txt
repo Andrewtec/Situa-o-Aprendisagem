@@ -1,0 +1,372 @@
+src/projeto/Main.java:3:	Avoid unused imports such as 'java.util.ArrayList'
+src/projeto/Main.java:4:	Avoid unused imports such as 'java.util.Date'
+src/projeto/Main.java:5:	Avoid unused imports such as 'java.util.List'
+src/projeto/Main.java:7:	Avoid unused imports such as 'javax.persistence.EntityManager'
+src/projeto/Main.java:8:	Avoid unused imports such as 'javax.persistence.Query'
+src/projeto/Main.java:10:	Avoid unused imports such as 'projeto.dao.CargaDao'
+src/projeto/Main.java:11:	Avoid unused imports such as 'projeto.entity.Carga'
+src/projeto/Main.java:12:	Avoid unused imports such as 'projeto.entity.Cliente'
+src/projeto/Main.java:13:	Avoid unused imports such as 'projeto.entity.Transportadora'
+src/projeto/Main.java:14:	Avoid unused imports such as 'projeto.util.JpaUtil'
+src/projeto/Main.java:16:	Avoid short class names like Main
+src/projeto/Main.java:16:	Each class should declare at least one constructor
+src/projeto/Main.java:16:	headerCommentRequirement Required
+src/projeto/dao/CargaDao.java:12:	headerCommentRequirement Required
+src/projeto/dao/CargaDao.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/projeto/dao/CargaDao.java:14:	Private field 'entityManager' could be made final; it is only initialized in the declaration or constructor.
+src/projeto/dao/CargaDao.java:14:	fieldCommentRequirement Required
+src/projeto/dao/CargaDao.java:16:	publicMethodCommentRequirement Required
+src/projeto/dao/CargaDao.java:20:	Parameter 'entityManager' is not assigned and could be declared final
+src/projeto/dao/CargaDao.java:20:	publicMethodCommentRequirement Required
+src/projeto/dao/CargaDao.java:24:	Avoid variables with short names like id
+src/projeto/dao/CargaDao.java:24:	Parameter 'id' is not assigned and could be declared final
+src/projeto/dao/CargaDao.java:24:	publicMethodCommentRequirement Required
+src/projeto/dao/CargaDao.java:28:	Avoid variables with short names like id
+src/projeto/dao/CargaDao.java:28:	Parameter 'id' is not assigned and could be declared final
+src/projeto/dao/CargaDao.java:28:	publicMethodCommentRequirement Required
+src/projeto/dao/CargaDao.java:30:	Local variable 'carga' could be declared final
+src/projeto/dao/CargaDao.java:35:	Method names should not start with capital letters
+src/projeto/dao/CargaDao.java:35:	publicMethodCommentRequirement Required
+src/projeto/dao/CargaDao.java:37:	Local variable 'query' could be declared final
+src/projeto/dao/CargaDao.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/dao/CargaDao.java:42:	Parameter 'carga' is not assigned and could be declared final
+src/projeto/dao/CargaDao.java:42:	publicMethodCommentRequirement Required
+src/projeto/dao/CargaDao.java:47:	Parameter 'carga' is not assigned and could be declared final
+src/projeto/dao/CargaDao.java:47:	publicMethodCommentRequirement Required
+src/projeto/dao/CargaDao.java:54:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/projeto/dao/CargaDao.java:55:	Avoid printStackTrace(); use a logger call instead.
+src/projeto/dao/ClienteDao.java:12:	headerCommentRequirement Required
+src/projeto/dao/ClienteDao.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/projeto/dao/ClienteDao.java:14:	Private field 'entityManager' could be made final; it is only initialized in the declaration or constructor.
+src/projeto/dao/ClienteDao.java:14:	fieldCommentRequirement Required
+src/projeto/dao/ClienteDao.java:16:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:21:	Parameter 'entityManager' is not assigned and could be declared final
+src/projeto/dao/ClienteDao.java:21:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:25:	Avoid variables with short names like id
+src/projeto/dao/ClienteDao.java:25:	Parameter 'id' is not assigned and could be declared final
+src/projeto/dao/ClienteDao.java:25:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:29:	Avoid variables with short names like id
+src/projeto/dao/ClienteDao.java:29:	Parameter 'id' is not assigned and could be declared final
+src/projeto/dao/ClienteDao.java:29:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:31:	Local variable 'cliente' could be declared final
+src/projeto/dao/ClienteDao.java:35:	Method names should not start with capital letters
+src/projeto/dao/ClienteDao.java:35:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:37:	Local variable 'query' could be declared final
+src/projeto/dao/ClienteDao.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/dao/ClienteDao.java:42:	Parameter 'cliente' is not assigned and could be declared final
+src/projeto/dao/ClienteDao.java:42:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:47:	Parameter 'carga' is not assigned and could be declared final
+src/projeto/dao/ClienteDao.java:47:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:54:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/projeto/dao/ClienteDao.java:55:	Avoid printStackTrace(); use a logger call instead.
+src/projeto/dao/ClienteDao.java:60:	Parameter 'nome' is not assigned and could be declared final
+src/projeto/dao/ClienteDao.java:60:	publicMethodCommentRequirement Required
+src/projeto/dao/ClienteDao.java:62:	Local variable 'query' could be declared final
+src/projeto/dao/ClienteDao.java:64:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/dao/ClienteDao.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/dao/TransportadoraDao.java:11:	headerCommentRequirement Required
+src/projeto/dao/TransportadoraDao.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/projeto/dao/TransportadoraDao.java:13:	Private field 'entityManager' could be made final; it is only initialized in the declaration or constructor.
+src/projeto/dao/TransportadoraDao.java:13:	fieldCommentRequirement Required
+src/projeto/dao/TransportadoraDao.java:15:	publicMethodCommentRequirement Required
+src/projeto/dao/TransportadoraDao.java:20:	Avoid variables with short names like id
+src/projeto/dao/TransportadoraDao.java:20:	Parameter 'id' is not assigned and could be declared final
+src/projeto/dao/TransportadoraDao.java:20:	publicMethodCommentRequirement Required
+src/projeto/dao/TransportadoraDao.java:24:	Avoid variables with short names like id
+src/projeto/dao/TransportadoraDao.java:24:	Parameter 'id' is not assigned and could be declared final
+src/projeto/dao/TransportadoraDao.java:24:	publicMethodCommentRequirement Required
+src/projeto/dao/TransportadoraDao.java:26:	Local variable 'transportadora' could be declared final
+src/projeto/dao/TransportadoraDao.java:30:	Method names should not start with capital letters
+src/projeto/dao/TransportadoraDao.java:30:	publicMethodCommentRequirement Required
+src/projeto/dao/TransportadoraDao.java:32:	Local variable 'query' could be declared final
+src/projeto/dao/TransportadoraDao.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/dao/TransportadoraDao.java:37:	Parameter 'transportadora' is not assigned and could be declared final
+src/projeto/dao/TransportadoraDao.java:37:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:11:	Each class should declare at least one constructor
+src/projeto/entity/Carga.java:11:	headerCommentRequirement Required
+src/projeto/entity/Carga.java:15:	Avoid variables with short names like id
+src/projeto/entity/Carga.java:15:	fieldCommentRequirement Required
+src/projeto/entity/Carga.java:16:	fieldCommentRequirement Required
+src/projeto/entity/Carga.java:17:	fieldCommentRequirement Required
+src/projeto/entity/Carga.java:19:	fieldCommentRequirement Required
+src/projeto/entity/Carga.java:21:	fieldCommentRequirement Required
+src/projeto/entity/Carga.java:23:	fieldCommentRequirement Required
+src/projeto/entity/Carga.java:25:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:29:	Parameter 'cliente' is not assigned and could be declared final
+src/projeto/entity/Carga.java:29:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:33:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:37:	Parameter 'transportadora' is not assigned and could be declared final
+src/projeto/entity/Carga.java:37:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:41:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:45:	Avoid variables with short names like id
+src/projeto/entity/Carga.java:45:	Parameter 'id' is not assigned and could be declared final
+src/projeto/entity/Carga.java:45:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:49:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:53:	Parameter 'entrada' is not assigned and could be declared final
+src/projeto/entity/Carga.java:53:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:57:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:61:	Parameter 'saida' is not assigned and could be declared final
+src/projeto/entity/Carga.java:61:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:65:	publicMethodCommentRequirement Required
+src/projeto/entity/Carga.java:69:	Parameter 'descricao' is not assigned and could be declared final
+src/projeto/entity/Carga.java:69:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:10:	Each class should declare at least one constructor
+src/projeto/entity/Cliente.java:10:	headerCommentRequirement Required
+src/projeto/entity/Cliente.java:13:	Avoid variables with short names like id
+src/projeto/entity/Cliente.java:13:	fieldCommentRequirement Required
+src/projeto/entity/Cliente.java:14:	fieldCommentRequirement Required
+src/projeto/entity/Cliente.java:15:	fieldCommentRequirement Required
+src/projeto/entity/Cliente.java:16:	fieldCommentRequirement Required
+src/projeto/entity/Cliente.java:18:	fieldCommentRequirement Required
+src/projeto/entity/Cliente.java:20:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:24:	Parameter 'cargas' is not assigned and could be declared final
+src/projeto/entity/Cliente.java:24:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:28:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:32:	Avoid variables with short names like id
+src/projeto/entity/Cliente.java:32:	Parameter 'id' is not assigned and could be declared final
+src/projeto/entity/Cliente.java:32:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:36:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:40:	Parameter 'nome' is not assigned and could be declared final
+src/projeto/entity/Cliente.java:40:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:44:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:48:	Parameter 'loja' is not assigned and could be declared final
+src/projeto/entity/Cliente.java:48:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:52:	publicMethodCommentRequirement Required
+src/projeto/entity/Cliente.java:56:	Parameter 'cidade' is not assigned and could be declared final
+src/projeto/entity/Cliente.java:56:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:5:	Avoid unused imports such as 'javax.persistence.CascadeType'
+src/projeto/entity/Transportadora.java:8:	Avoid unused imports such as 'javax.persistence.ManyToOne'
+src/projeto/entity/Transportadora.java:12:	Each class should declare at least one constructor
+src/projeto/entity/Transportadora.java:12:	headerCommentRequirement Required
+src/projeto/entity/Transportadora.java:15:	Avoid variables with short names like id
+src/projeto/entity/Transportadora.java:15:	fieldCommentRequirement Required
+src/projeto/entity/Transportadora.java:16:	fieldCommentRequirement Required
+src/projeto/entity/Transportadora.java:17:	fieldCommentRequirement Required
+src/projeto/entity/Transportadora.java:18:	fieldCommentRequirement Required
+src/projeto/entity/Transportadora.java:20:	fieldCommentRequirement Required
+src/projeto/entity/Transportadora.java:22:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:26:	Avoid variables with short names like id
+src/projeto/entity/Transportadora.java:26:	Parameter 'id' is not assigned and could be declared final
+src/projeto/entity/Transportadora.java:26:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:30:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:34:	Parameter 'cargas' is not assigned and could be declared final
+src/projeto/entity/Transportadora.java:34:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:38:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:42:	Parameter 'nome' is not assigned and could be declared final
+src/projeto/entity/Transportadora.java:42:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:46:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:50:	Parameter 'cnpj' is not assigned and could be declared final
+src/projeto/entity/Transportadora.java:50:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:54:	publicMethodCommentRequirement Required
+src/projeto/entity/Transportadora.java:58:	Parameter 'telefone' is not assigned and could be declared final
+src/projeto/entity/Transportadora.java:58:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:12:	Each class should declare at least one constructor
+src/projeto/mb/CargaMb.java:12:	headerCommentRequirement Required
+src/projeto/mb/CargaMb.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/projeto/mb/CargaMb.java:14:	fieldCommentRequirement Required
+src/projeto/mb/CargaMb.java:16:	fieldCommentRequirement Required
+src/projeto/mb/CargaMb.java:17:	fieldCommentRequirement Required
+src/projeto/mb/CargaMb.java:19:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:26:	Parameter 'cargas' is not assigned and could be declared final
+src/projeto/mb/CargaMb.java:26:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:30:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:34:	Parameter 'carga' is not assigned and could be declared final
+src/projeto/mb/CargaMb.java:34:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:41:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:46:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:51:	Avoid variables with short names like id
+src/projeto/mb/CargaMb.java:51:	Parameter 'id' is not assigned and could be declared final
+src/projeto/mb/CargaMb.java:51:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:56:	Avoid variables with short names like id
+src/projeto/mb/CargaMb.java:56:	Parameter 'id' is not assigned and could be declared final
+src/projeto/mb/CargaMb.java:56:	publicMethodCommentRequirement Required
+src/projeto/mb/CargaMb.java:58:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/projeto/mb/ClienteMb.java:13:	Each class should declare at least one constructor
+src/projeto/mb/ClienteMb.java:13:	headerCommentRequirement Required
+src/projeto/mb/ClienteMb.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/projeto/mb/ClienteMb.java:15:	fieldCommentRequirement Required
+src/projeto/mb/ClienteMb.java:17:	fieldCommentRequirement Required
+src/projeto/mb/ClienteMb.java:18:	fieldCommentRequirement Required
+src/projeto/mb/ClienteMb.java:21:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:28:	Parameter 'clientes' is not assigned and could be declared final
+src/projeto/mb/ClienteMb.java:28:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:32:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:36:	Parameter 'cliente' is not assigned and could be declared final
+src/projeto/mb/ClienteMb.java:36:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:43:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:48:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:53:	Avoid variables with short names like id
+src/projeto/mb/ClienteMb.java:53:	Parameter 'id' is not assigned and could be declared final
+src/projeto/mb/ClienteMb.java:53:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:58:	Avoid variables with short names like id
+src/projeto/mb/ClienteMb.java:58:	Parameter 'id' is not assigned and could be declared final
+src/projeto/mb/ClienteMb.java:58:	publicMethodCommentRequirement Required
+src/projeto/mb/ClienteMb.java:60:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/projeto/mb/ContatoMb.java:3:	Avoid unused imports such as 'java.util.Map'
+src/projeto/mb/ContatoMb.java:6:	Avoid unused imports such as 'javax.faces.context.FacesContext'
+src/projeto/mb/ContatoMb.java:8:	Avoid unused imports such as 'javax.servlet.http.HttpServletRequest'
+src/projeto/mb/ContatoMb.java:14:	Each class should declare at least one constructor
+src/projeto/mb/ContatoMb.java:14:	headerCommentRequirement Required
+src/projeto/mb/ContatoMb.java:15:	fieldCommentRequirement Required
+src/projeto/mb/ContatoMb.java:16:	fieldCommentRequirement Required
+src/projeto/mb/ContatoMb.java:17:	fieldCommentRequirement Required
+src/projeto/mb/ContatoMb.java:18:	fieldCommentRequirement Required
+src/projeto/mb/ContatoMb.java:19:	fieldCommentRequirement Required
+src/projeto/mb/ContatoMb.java:23:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:26:	Parameter 'telefone' is not assigned and could be declared final
+src/projeto/mb/ContatoMb.java:26:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:29:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:32:	Parameter 'assunto' is not assigned and could be declared final
+src/projeto/mb/ContatoMb.java:32:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:35:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:38:	Parameter 'nome' is not assigned and could be declared final
+src/projeto/mb/ContatoMb.java:38:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:41:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:44:	Parameter 'email' is not assigned and could be declared final
+src/projeto/mb/ContatoMb.java:44:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:47:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:50:	Parameter 'mensagem' is not assigned and could be declared final
+src/projeto/mb/ContatoMb.java:50:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:54:	publicMethodCommentRequirement Required
+src/projeto/mb/ContatoMb.java:55:	Avoid unused local variables such as 'entityManager'.
+src/projeto/mb/ContatoMb.java:55:	Found 'DU'-anomaly for variable 'entityManager' (lines '55'-'63').
+src/projeto/mb/ContatoMb.java:55:	Local variable 'entityManager' could be declared final
+src/projeto/mb/ContatoMb.java:57:	System.out.println is used
+src/projeto/mb/ContatoMb.java:58:	System.out.println is used
+src/projeto/mb/ContatoMb.java:59:	System.out.println is used
+src/projeto/mb/ContatoMb.java:60:	System.out.println is used
+src/projeto/mb/ContatoMb.java:61:	System.out.println is used
+src/projeto/mb/TransportadoraMb.java:11:	Each class should declare at least one constructor
+src/projeto/mb/TransportadoraMb.java:11:	headerCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/projeto/mb/TransportadoraMb.java:13:	fieldCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:15:	fieldCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:16:	fieldCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:19:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:26:	Parameter 'transportadoras' is not assigned and could be declared final
+src/projeto/mb/TransportadoraMb.java:26:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:30:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:34:	Parameter 'transportadora' is not assigned and could be declared final
+src/projeto/mb/TransportadoraMb.java:34:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:41:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:46:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:51:	Avoid variables with short names like id
+src/projeto/mb/TransportadoraMb.java:51:	Parameter 'id' is not assigned and could be declared final
+src/projeto/mb/TransportadoraMb.java:51:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:56:	Avoid variables with short names like id
+src/projeto/mb/TransportadoraMb.java:56:	Parameter 'id' is not assigned and could be declared final
+src/projeto/mb/TransportadoraMb.java:56:	publicMethodCommentRequirement Required
+src/projeto/mb/TransportadoraMb.java:58:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/projeto/util/JpaFilter.java:15:	Each class should declare at least one constructor
+src/projeto/util/JpaFilter.java:15:	headerCommentRequirement Required
+src/projeto/util/JpaFilter.java:18:	Parameter 'request' is not assigned and could be declared final
+src/projeto/util/JpaFilter.java:18:	Parameter 'response' is not assigned and could be declared final
+src/projeto/util/JpaFilter.java:18:	publicMethodCommentRequirement Required
+src/projeto/util/JpaFilter.java:19:	Parameter 'filterChain' is not assigned and could be declared final
+src/projeto/util/JpaFilter.java:20:	Local variable 'entityManager' could be declared final
+src/projeto/util/JpaFilter.java:25:	Potential violation of Law of Demeter (method chain calls)
+src/projeto/util/JpaFilter.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/util/JpaFilter.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/projeto/util/JpaFilter.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/util/JpaFilter.java:30:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/projeto/util/JpaFilter.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/projeto/util/JpaFilter.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/util/JpaFilter.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/util/JpaFilter.java:38:	Parameter 'arg0' is not assigned and could be declared final
+src/projeto/util/JpaFilter.java:38:	publicMethodCommentRequirement Required
+src/projeto/util/JpaFilter.java:43:	publicMethodCommentRequirement Required
+src/projeto/util/JpaUtil.java:10:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/projeto/util/JpaUtil.java:10:	headerCommentRequirement Required
+src/projeto/util/JpaUtil.java:12:	fieldCommentRequirement Required
+src/projeto/util/JpaUtil.java:13:	Avoid excessively long variable names like entityManagerFactory
+src/projeto/util/JpaUtil.java:13:	fieldCommentRequirement Required
+src/projeto/util/JpaUtil.java:15:	publicMethodCommentRequirement Required
+src/projeto/util/JpaUtil.java:16:	Avoid using if statements without curly braces
+src/projeto/util/JpaUtil.java:16:	Singleton is not thread safe
+src/projeto/util/JpaUtil.java:21:	publicMethodCommentRequirement Required
+src/projeto/util/JpaUtil.java:25:	publicMethodCommentRequirement Required
+src/projeto/util/JpaUtil.java:29:	publicMethodCommentRequirement Required
+src/projeto/util/JpaUtil.java:30:	Local variable 'context' could be declared final
+src/projeto/util/JpaUtil.java:31:	Local variable 'request' could be declared final
+src/projeto/util/JpaUtil.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/projeto/util/JpaUtil.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/util/JpaUtil.java:32:	Local variable 'entityManager' could be declared final
+src/projeto/util/JpaUtil.java:32:	Potential violation of Law of Demeter (object not created locally)
+src/projeto/util/JpaUtil.java:33:	Consider simply returning the value vs storing it in local variable 'entityManager'
+src/projeto/util/JpaUtil.java:36:	Parameter 'request' is not assigned and could be declared final
+src/projeto/util/JpaUtil.java:36:	publicMethodCommentRequirement Required
+src/projeto/util/JpaUtil.java:37:	Parameter 'entityManager' is not assigned and could be declared final
+test/projeto/test/CargaDaoTest.java:7:	headerCommentRequirement Required
+test/projeto/test/CargaDaoTest.java:9:	Avoid unnecessary constructors - the compiler will generate these for you
+test/projeto/test/CargaDaoTest.java:9:	publicMethodCommentRequirement Required
+test/projeto/test/CargaDaoTest.java:15:	Avoid variables with short names like c
+test/projeto/test/CargaDaoTest.java:15:	Local variable 'c' could be declared final
+test/projeto/test/CargaDaoTest.java:19:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/CargaDaoTest.java:20:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/CargaDaoTest.java:21:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/CargaDaoTest.java:22:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/CargaDaoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/CargaDaoTest.java:24:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/CargaDaoTest.java:25:	Local variable 'carga' could be declared final
+test/projeto/test/CargaDaoTest.java:25:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/CargaDaoTest.java:31:	publicMethodCommentRequirement Required
+test/projeto/test/CargaDaoTest.java:32:	JUnit assertions should include a message
+test/projeto/test/ClienteDaoTest.java:3:	Avoid unused imports such as 'java.io.File'
+test/projeto/test/ClienteDaoTest.java:4:	Avoid unused imports such as 'java.io.FileInputStream'
+test/projeto/test/ClienteDaoTest.java:5:	Avoid unused imports such as 'java.sql.SQLException'
+test/projeto/test/ClienteDaoTest.java:7:	Avoid unused imports such as 'org.dbunit.Assertion'
+test/projeto/test/ClienteDaoTest.java:8:	Avoid unused imports such as 'org.dbunit.dataset.IDataSet'
+test/projeto/test/ClienteDaoTest.java:9:	Avoid unused imports such as 'org.dbunit.dataset.ITable'
+test/projeto/test/ClienteDaoTest.java:10:	Avoid unused imports such as 'org.dbunit.dataset.xml.FlatXmlDataSetBuilder'
+test/projeto/test/ClienteDaoTest.java:15:	headerCommentRequirement Required
+test/projeto/test/ClienteDaoTest.java:17:	Avoid unnecessary constructors - the compiler will generate these for you
+test/projeto/test/ClienteDaoTest.java:17:	publicMethodCommentRequirement Required
+test/projeto/test/ClienteDaoTest.java:23:	Local variable 'cli' could be declared final
+test/projeto/test/ClienteDaoTest.java:27:	Local variable 'cliente' could be declared final
+test/projeto/test/ClienteDaoTest.java:27:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/ClienteDaoTest.java:33:	publicMethodCommentRequirement Required
+test/projeto/test/ClienteDaoTest.java:34:	JUnit assertions should include a message
+test/projeto/test/DBUnitTest.java:17:	This class name ends with Test but contains no test cases
+test/projeto/test/DBUnitTest.java:17:	headerCommentRequirement Required
+test/projeto/test/DBUnitTest.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/projeto/test/DBUnitTest.java:19:	fieldCommentRequirement Required
+test/projeto/test/DBUnitTest.java:20:	Avoid excessively long variable names like entityManagerFactory
+test/projeto/test/DBUnitTest.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/projeto/test/DBUnitTest.java:20:	fieldCommentRequirement Required
+test/projeto/test/DBUnitTest.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/projeto/test/DBUnitTest.java:21:	fieldCommentRequirement Required
+test/projeto/test/DBUnitTest.java:23:	It is a good practice to call super() in a constructor
+test/projeto/test/DBUnitTest.java:23:	publicMethodCommentRequirement Required
+test/projeto/test/DBUnitTest.java:37:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/projeto/test/DBUnitTest.java:37:	protectedMethodCommentRequirement Required
+test/projeto/test/DBUnitTest.java:43:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/projeto/test/DBUnitTest.java:43:	protectedMethodCommentRequirement Required
+test/projeto/test/DBUnitTest.java:47:	publicMethodCommentRequirement Required
+test/projeto/test/DBUnitTest.java:50:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/DBUnitTest.java:54:	publicMethodCommentRequirement Required
+test/projeto/test/DBUnitTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/DBUnitTest.java:60:	Assigning an Object to null is a code smell.  Consider refactoring.
+test/projeto/test/DBUnitTest.java:63:	publicMethodCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:19:	This class name ends with Test but contains no test cases
+test/projeto/test/DBUnitTest_.java:19:	headerCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/projeto/test/DBUnitTest_.java:21:	fieldCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:22:	Avoid excessively long variable names like entityManagerFactory
+test/projeto/test/DBUnitTest_.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/projeto/test/DBUnitTest_.java:22:	fieldCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+test/projeto/test/DBUnitTest_.java:23:	fieldCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:25:	It is a good practice to call super() in a constructor
+test/projeto/test/DBUnitTest_.java:25:	publicMethodCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:33:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/projeto/test/DBUnitTest_.java:33:	protectedMethodCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:38:	A method/constructor shouldnt explicitly throw java.lang.Exception
+test/projeto/test/DBUnitTest_.java:38:	protectedMethodCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:42:	publicMethodCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:45:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/DBUnitTest_.java:49:	publicMethodCommentRequirement Required
+test/projeto/test/DBUnitTest_.java:50:	Potential violation of Law of Demeter (method chain calls)
+test/projeto/test/DBUnitTest_.java:55:	Assigning an Object to null is a code smell.  Consider refactoring.
+test/projeto/test/DBUnitTest_.java:58:	publicMethodCommentRequirement Required
+test/projeto/test/TransportadoraDaoTest.java:3:	Each class should declare at least one constructor
+test/projeto/test/TransportadoraDaoTest.java:3:	headerCommentRequirement Required

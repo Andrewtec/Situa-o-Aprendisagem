@@ -32,6 +32,7 @@ public class ClienteDao {
 		entityManager.remove(cliente);
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<Cliente> ListarClientes() {
 
 		Query query = entityManager.createQuery("From Cliente", Cliente.class);
@@ -44,23 +45,23 @@ public class ClienteDao {
 		entityManager.merge(cliente);
 	}
 
-	public Carga salvar(Carga carga) {
+	public Cliente salvar(Cliente cliente) {
 		try {
-			if (carga.getId() == null) {
-				entityManager.persist(carga);
+			if (cliente.getId() == null) {
+				entityManager.persist(cliente);
 			} else {
-				entityManager.merge(carga);
+				entityManager.merge(cliente);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return carga;
+		return cliente;
 	}
 
 	public List<Cliente> listarClientePorNome(String nome) {
 
 		Query query = entityManager.createQuery(
-				"From Usuario b Where b.nome = ?", Cliente.class);
+				"From Cliente c Where c.nome = ?", Cliente.class);
 		query.setParameter(1, nome);
 		return query.getResultList();
 	}

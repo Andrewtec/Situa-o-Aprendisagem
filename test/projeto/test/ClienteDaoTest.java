@@ -24,13 +24,13 @@ public class ClienteDaoTest extends DBUnitTest {
 		cli.setNome("Cliente_Teste_1");
 		cli.setLoja("loja");
 		cli.setCidade("Floripa");
-		Cliente cliente = getDao().salvar(cli);
+		//Cliente cliente = getDao().salvar(cli);
 		close();
-		return cliente;
+		return cli;
 	}
 
 	@Test
-	public void testGravaCarga() {
+	public void testGravaCliente() {
 		assertNotNull(gravaCliente());
 	}
 	

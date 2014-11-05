@@ -17,6 +17,10 @@ private EntityManager entityManager;
 		entityManager = JpaUtil.getEntityManager();
 	}
 	
+	public TransportadoraDao(EntityManager entityManager) {
+		this.entityManager = entityManager;
+	}
+	
 	public Transportadora buscarPorId(Long id) {
 		return entityManager.find(Transportadora.class, id);
 	}
@@ -27,6 +31,7 @@ private EntityManager entityManager;
 		entityManager.remove(transportadora);
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Transportadora> ListarTransportadoras(){
 		
 		Query query=entityManager.createQuery("From Transportadora",Transportadora.class);

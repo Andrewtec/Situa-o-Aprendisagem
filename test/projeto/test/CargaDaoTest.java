@@ -1,10 +1,60 @@
 package projeto.test;
 
+import javax.persistence.EntityManager;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
+import projeto.dao.CargaDao;
+import projeto.dao.ClienteDao;
+import projeto.dao.TransportadoraDao;
 import projeto.entity.Carga;
+import projeto.entity.Cliente;
+import projeto.entity.Transportadora;
+import projeto.util.JpaUtil;
 
 public class CargaDaoTest extends DBUnitTest {
+	
+//private static EntityManager entityManager;
+//	
+//	@BeforeClass
+//	public static void init(){
+//		JpaUtil.iniciarPersistenceUnit();
+//		entityManager = JpaUtil.createEntityManager();
+//	}
+//	
+//	@Test
+//	public void testEntityManager(){
+//		assertNotNull("Gerenciamento de entidade está nulo", entityManager);
+//	}
+//	
+//	@Test
+//	public void testCargaDao() {
+//		CargaDao dao = new CargaDao(entityManager);
+//		assertNotNull("Objeto de acesso a dados do objeto Cliente esta nulo", dao);
+//		dao = null;
+//	}
+//	
+//	@Test
+//	public void testClienteDao() {
+//		ClienteDao dao = new ClienteDao(entityManager);
+//		assertNotNull("Objeto de acesso a dados do objeto Contato esta nulo", dao);
+//		dao = null;
+//	}
+//	
+//	@Test
+//	public void testTranportadoraDao() {
+//		TransportadoraDao dao = new TransportadoraDao(entityManager);
+//		assertNotNull("Objeto de acesso a dados do objeto Reserva esta nulo", dao);
+//		dao = null;
+//	}
+//	
+//	@AfterClass
+//	public void close(){
+//		entityManager.close();
+//		JpaUtil.fecharPersistenceUnit();
+//	}
 
 	public CargaDaoTest() {
 		super();
@@ -13,15 +63,17 @@ public class CargaDaoTest extends DBUnitTest {
 	private Carga gravaCarga() {
 		begin();
 		Carga c = new Carga();
-		c.setDescricao("Cliente_Teste_1");
+		Transportadora t = new Transportadora();
+		Cliente cli = new Cliente();
+  	    c.setDescricao("Carga_Teste_1");
 		c.setEntrada("1010");
 		c.setSaida("1020");
-		c.getTransportadora().setCnpj("73747474747");
-		c.getTransportadora().setNome("Express");
-		c.getTransportadora().setTelefone("34678954");
-		c.getCliente().setNome("joao");
-		c.getCliente().setLoja("loja 01");
-		c.getCliente().setCidade("Maringa");
+		t.setCnpj("73747474747");
+		t.setNome("Express");
+		t.setTelefone("34678954");
+		cli.setNome("joao");
+		cli.setLoja("loja 01");
+		cli.setCidade("Maringa");
 		Carga carga = getDao().salvar(c);
 		close();
 		return carga;

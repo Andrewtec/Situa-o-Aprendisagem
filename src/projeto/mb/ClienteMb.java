@@ -45,7 +45,7 @@ import projeto.entity.Cliente;
 			cliente = new Cliente();
 		}
 		
-		public String salvar(){
+	public String salvar(){
 			clienteDao.atualizarCliente(getCliente());
 			return "clientelista";
 		}
