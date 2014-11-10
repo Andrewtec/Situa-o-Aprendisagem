@@ -17,6 +17,7 @@ public class Carga {
 	private String saida;
 	@Lob
 	private String descricao;
+	private Integer classificacao;
 	@ManyToOne(cascade = CascadeType.PERSIST)
 	private Cliente cliente;
 	@ManyToOne(cascade = CascadeType.PERSIST)
@@ -68,6 +69,14 @@ public class Carga {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	public Integer getClassificacao() {
+		return classificacao;
+	}
+
+	public void setClassificacao(Integer classificacao) {
+		this.classificacao = classificacao;
 	}
 
 }
