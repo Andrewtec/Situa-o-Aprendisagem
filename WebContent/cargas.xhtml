@@ -29,7 +29,7 @@
 						</h:column>
 						<h:column>
 							<f:facet name="header">Classificação</f:facet>
-							<h:outputText value="#{carga.classificacao}" />
+							<h:outputText value="#{carga.classificacao.tipo}" />
 						</h:column>
 						<h:column>
 							<h:commandLink action="#{cargaMb.carregarEdicao(carga.id)}"><span class="glyphicon glyphicon-pencil"></span></h:commandLink> 

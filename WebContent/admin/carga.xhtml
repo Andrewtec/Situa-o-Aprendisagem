@@ -47,7 +47,7 @@
 					</div>
 					<div class="form-group">
 						<h:outputLabel value="Classificação" />
-						<h:selectOneMenu converter="classificacaoConverter" value="#{cargaMb.carga.classificacao}" styleClass="form-control" style="width:45%;">
+						<h:selectOneMenu value="#{cargaMb.carga.classificacao}" styleClass="form-control" style="width:45%;">
 							<f:selectItem itemValue="" itemLabel=" -- " />
 							<f:selectItems value="#{cargaMb.classificacoes}" var="classificacao" 
 								itemLabel="#{classificacao.tipo}" itemValue="#{classificacao}"  />
