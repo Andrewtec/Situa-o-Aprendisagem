@@ -32,16 +32,29 @@
 						<h:outputLabel value="Entrada">
 						</h:outputLabel>
 						<h:inputText value="#{cargaMb.carga.entrada}"
-							styleClass="form-control"></h:inputText>
+							styleClass="form-control">
+							<f:passThroughAttribute name="type" value="datetime-local"/>
+							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm"	 /></h:inputText>
 					</div>
 					<div class="form-group">
 						<h:outputLabel value="Saida">
 						</h:outputLabel>
 						<h:inputText value="#{cargaMb.carga.saida}"
-							styleClass="form-control"></h:inputText>
+							styleClass="form-control">
+							<f:passThroughAttribute name="type" value="datetime-local"/>
+							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm"	 /></h:inputText>
+					</div>
+					
+					<div class="form-group">
+						<h:outputLabel value="Classificação" />
+						<h:selectOneMenu value="#{cargaMb.carga.classificacao}" styleClass="form-control" style="width:45%;">
+							<f:selectItem itemValue="" itemLabel=" -- " />
+							<f:selectItems value="#{cargaMb.classificacoes}" var="classificacao" 
+								itemLabel="#{classificacao.tipo}" itemValue="#{tipo}"  />
+						</h:selectOneMenu>
 					</div>
 
-					<h:commandButton action="#{cargaMb.salvar}" value="Enviar"
+					<h:commandButton action="#{cargaMb.salvar}" value="Salvar"
 						styleClass="btn btn-default"></h:commandButton>
 				</h:form>
 			</div>

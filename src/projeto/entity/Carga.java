@@ -1,5 +1,7 @@
 package projeto.entity;
 
+import java.util.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,11 +15,12 @@ public class Carga {
 	@Id
 	@GeneratedValue
 	private Long id;
-	private String entrada;
-	private String saida;
+	private Date entrada;
+	private Date saida;
 	@Lob
 	private String descricao;
-	private Integer classificacao;
+	@ManyToOne(cascade = CascadeType.PERSIST)
+	private Classificacao classificacao;
 	@ManyToOne(cascade = CascadeType.PERSIST)
 	private Cliente cliente;
 	@ManyToOne(cascade = CascadeType.PERSIST)
@@ -47,22 +50,6 @@ public class Carga {
 		this.id = id;
 	}
 
-	public String getEntrada() {
-		return entrada;
-	}
-
-	public void setEntrada(String entrada) {
-		this.entrada = entrada;
-	}
-
-	public String getSaida() {
-		return saida;
-	}
-
-	public void setSaida(String saida) {
-		this.saida = saida;
-	}
-
 	public String getDescricao() {
 		return descricao;
 	}
@@ -71,11 +58,29 @@ public class Carga {
 		this.descricao = descricao;
 	}
 
-	public Integer getClassificacao() {
+	
+
+	public Date getEntrada() {
+		return entrada;
+	}
+
+	public void setEntrada(Date entrada) {
+		this.entrada = entrada;
+	}
+
+	public Date getSaida() {
+		return saida;
+	}
+
+	public void setSaida(Date saida) {
+		this.saida = saida;
+	}
+
+	public Classificacao getClassificacao() {
 		return classificacao;
 	}
 
-	public void setClassificacao(Integer classificacao) {
+	public void setClassificacao(Classificacao classificacao) {
 		this.classificacao = classificacao;
 	}
 

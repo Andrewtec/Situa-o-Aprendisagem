@@ -7,6 +7,7 @@
 	xmlns:f="http://java.sun.com/jsf/core">
 
 <ui:composition template="../WEB-INF/templates/base.xhtml">
+
 	<ui:define name="page-title">
 		<h1>Carga</h1>
 	</ui:define>
@@ -32,13 +33,25 @@
 						<h:outputLabel value="Entrada">
 						</h:outputLabel>
 						<h:inputText value="#{cargaMb.carga.entrada}"
-							styleClass="form-control"></h:inputText>
+							styleClass="form-control">
+							<f:passThroughAttribute name="type" value="datetime-local"/>
+							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm"	 /></h:inputText>
 					</div>
 					<div class="form-group">
 						<h:outputLabel value="Saida">
 						</h:outputLabel>
 						<h:inputText value="#{cargaMb.carga.saida}"
-							styleClass="form-control"></h:inputText>
+							styleClass="form-control">
+							<f:passThroughAttribute name="type" value="datetime-local"/>
+							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm"	 /></h:inputText>
+					</div>
+					<div class="form-group">
+						<h:outputLabel value="Classificação" />
+						<h:selectOneMenu converter="classificacaoConverter" value="#{cargaMb.carga.classificacao}" styleClass="form-control" style="width:45%;">
+							<f:selectItem itemValue="" itemLabel=" -- " />
+							<f:selectItems value="#{cargaMb.classificacoes}" var="classificacao" 
+								itemLabel="#{classificacao.tipo}" itemValue="#{classificacao}"  />
+						</h:selectOneMenu>
 					</div>
 
 					<h:commandButton action="#{cargaMb.salvar}" value="Salvar"

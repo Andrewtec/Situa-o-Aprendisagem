@@ -23,7 +23,7 @@ public class CargaDaoTestEntity extends DBUnitTest {
 	
 	@Test
 	public void testEntityManager(){
-		assertNotNull("Gerenciamento de entidade está nulo", entityManager);
+		assertNull("Gerenciamento de entidade está nulo", entityManager);
 	}
 	
 	@Test
