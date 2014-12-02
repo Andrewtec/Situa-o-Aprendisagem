@@ -20,7 +20,7 @@
 					<li><h:link outcome="/quemsomos" value="Quem Somos" /></li>
 					<li><h:link outcome="/contato" value="Contato" /></li>
 					<li><h:link outcome="/localizacao" value="Localização" /></li>
-					<li><h:link outcome="/carga" value="Cargas" /></li>
+					<li><h:link outcome="/carga" value="Cadastrar Cargas" /></li>
 				</ul>
 
 				<ul id="menu_admin" class="nav navbar-nav navbar-right">
@@ -36,11 +36,14 @@
 										value="#{sessaoUsuarioMb.nomeUsuario}" />
 							</span> <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><h:link outcome="/admin/carga" value="Cadastrar Cargas" /></li>
-							<li><h:link outcome="/admin/cargas" value="Listar Cargas" /></li>
+						    <li><th colspan="9"><h4> Cadastro </h4> </th></li>
+						    <li><h:link outcome="/admin/carga" value="Cadastrar Cargas" /></li>
 							<li><h:link outcome="/admin/cliente" value="Cadastrar Clientes" /></li>
-							<li><h:link outcome="/admin/clientes" value="Listar Clientes" /></li>
 							<li><h:link outcome="/admin/transportadora" value="Cadastrar Transportadoras" /></li>
+							<li class="divider"></li>
+							<li><th colspan="9"><h4>  Listar  </h4> </th></li>
+							<li><h:link outcome="/admin/cargas" value="Listar Cargas" /></li>
+							<li><h:link outcome="/admin/clientes" value="Listar Clientes" /></li>
 							<li><h:link outcome="/admin/transportadoras" value="Listar Transportadoras" /></li>
 						    <li class="divider"></li>
 								<li><h:form>
