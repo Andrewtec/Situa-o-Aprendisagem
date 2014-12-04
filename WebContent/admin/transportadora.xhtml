@@ -11,14 +11,20 @@
 		<h1>Transportadora</h1>
 	</ui:define>
 	<ui:define name="content">
+		<div>
+			<p style="font-size: 20px; font-weight: 800; margin-left: 32px">Cadastrar
+				Transportadoras</p>
+		</div>
 		<div class="panel panel-default col-md-9">
 			<div class="panel-body">
 				<h:form role="form">
 					<h:inputHidden value="#{transportadoraMb.transportadora.id}" />
-					<h:panelGroup rendered="#{not empty transportadoraMb.transportadora.id}">
+					<h:panelGroup
+						rendered="#{not empty transportadoraMb.transportadora.id}">
 						<div class="form-group">
 							<h:outputLabel value="Código" />
-							<h:inputText readonly="true" value="#{transportadoraMb.transportadora.id}"
+							<h:inputText readonly="true"
+								value="#{transportadoraMb.transportadora.id}"
 								styleClass="form-control" />
 						</div>
 					</h:panelGroup>

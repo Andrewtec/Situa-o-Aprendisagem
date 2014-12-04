@@ -11,12 +11,17 @@
 		<h1>Clientes</h1>
 	</ui:define>
 	<ui:define name="content">
+		<div>
+			<p style="font-size: 20px; font-weight: 800; margin-left: 35px">Lista de
+				Clientes</p>
+		</div>
 		<div class="panel panel-default col-md-9">
 			<div class="panel-body">
 				<h:form>
-					<h:dataTable value="#{clienteMb.clientes}" var="cliente" styleClass="table">
+					<h:dataTable value="#{clienteMb.clientes}" var="cliente"
+						styleClass="table">
 						<h:column>
-						<f:facet name="header">Nome</f:facet>
+							<f:facet name="header">Nome</f:facet>
 							<h:outputText value="#{cliente.nome}" />
 						</h:column>
 						<h:column>
@@ -28,8 +33,12 @@
 							<h:outputText value="#{cliente.cidade}" />
 						</h:column>
 						<h:column>
-							<h:commandLink action="#{clienteMb.carregarEdicao(cliente.id)}"><span class="glyphicon glyphicon-pencil"></span></h:commandLink> 
-							<h:commandLink action="#{clienteMb.excluir(cliente.id)}"><span class="glyphicon glyphicon-trash"></span></h:commandLink>
+							<h:commandLink action="#{clienteMb.carregarEdicao(cliente.id)}">
+								<span class="glyphicon glyphicon-pencil"></span>
+							</h:commandLink>
+							<h:commandLink action="#{clienteMb.excluir(cliente.id)}">
+								<span class="glyphicon glyphicon-trash"></span>
+							</h:commandLink>
 						</h:column>
 					</h:dataTable>
 				</h:form>

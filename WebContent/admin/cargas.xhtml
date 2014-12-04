@@ -11,12 +11,17 @@
 		<h1>Cargas</h1>
 	</ui:define>
 	<ui:define name="content">
+		<div>
+			<p style="font-size: 20px; font-weight: 800; margin-left: 35px">Lista de
+				Cargas</p>
+		</div>
 		<div class="panel panel-default col-md-9">
 			<div class="panel-body">
 				<h:form>
-					<h:dataTable value="#{cargaMb.cargas}" var="carga" styleClass="table">
+					<h:dataTable value="#{cargaMb.cargas}" var="carga"
+						styleClass="table">
 						<h:column>
-						<f:facet name="header">Descrição</f:facet>
+							<f:facet name="header">Descrição</f:facet>
 							<h:outputText value="#{carga.descricao}" />
 						</h:column>
 						<h:column>
@@ -27,15 +32,19 @@
 							<f:facet name="header">Saida</f:facet>
 							<h:outputText value="#{carga.saida}" />
 						</h:column>
-						
+
 						<h:column>
 							<f:facet name="header">Classificação</f:facet>
 							<h:outputText value="#{carga.classificacao.tipo}" />
 						</h:column>
-						
+
 						<h:column>
-							<h:commandLink action="#{cargaMb.carregarEdicao(carga.id)}"><span class="glyphicon glyphicon-pencil"></span></h:commandLink> 
-							<h:commandLink action="#{cargaMb.excluir(carga.id)}"><span class="glyphicon glyphicon-trash"></span></h:commandLink>
+							<h:commandLink action="#{cargaMb.carregarEdicao(carga.id)}">
+								<span class="glyphicon glyphicon-pencil"></span>
+							</h:commandLink>
+							<h:commandLink action="#{cargaMb.excluir(carga.id)}">
+								<span class="glyphicon glyphicon-trash"></span>
+							</h:commandLink>
 						</h:column>
 					</h:dataTable>
 				</h:form>

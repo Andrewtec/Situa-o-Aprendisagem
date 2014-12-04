@@ -12,6 +12,10 @@
 		<h1>Carga</h1>
 	</ui:define>
 	<ui:define name="content">
+		<div>
+			<p style="font-size: 20px; font-weight: 800; margin-left: 32px">Cadastrar
+				Cargas</p>
+		</div>
 		<div class="panel panel-default col-md-9">
 			<div class="panel-body">
 				<h:form role="form">
@@ -34,23 +38,27 @@
 						</h:outputLabel>
 						<h:inputText value="#{cargaMb.carga.entrada}"
 							styleClass="form-control">
-							<f:passThroughAttribute name="type" value="datetime-local"/>
-							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm"	 /></h:inputText>
+							<f:passThroughAttribute name="type" value="datetime-local" />
+							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm" />
+						</h:inputText>
 					</div>
 					<div class="form-group">
 						<h:outputLabel value="Saida">
 						</h:outputLabel>
 						<h:inputText value="#{cargaMb.carga.saida}"
 							styleClass="form-control">
-							<f:passThroughAttribute name="type" value="datetime-local"/>
-							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm"	 /></h:inputText>
+							<f:passThroughAttribute name="type" value="datetime-local" />
+							<f:convertDateTime pattern="yyyy-MM-dd'T'HH:mm" />
+						</h:inputText>
 					</div>
 					<div class="form-group">
 						<h:outputLabel value="Classificação" />
-						<h:selectOneMenu value="#{cargaMb.carga.classificacao}" styleClass="form-control" style="width:45%;">
+						<h:selectOneMenu value="#{cargaMb.carga.classificacao}"
+							styleClass="form-control" style="width:45%;">
 							<f:selectItem itemValue="" itemLabel=" -- " />
-							<f:selectItems value="#{cargaMb.classificacoes}" var="classificacao" 
-								itemLabel="#{classificacao.tipo}" itemValue="#{classificacao}"  />
+							<f:selectItems value="#{cargaMb.classificacoes}"
+								var="classificacao" itemLabel="#{classificacao.tipo}"
+								itemValue="#{classificacao}" />
 						</h:selectOneMenu>
 					</div>
 
